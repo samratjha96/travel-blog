@@ -24,12 +24,12 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023 a theme by [Themefisher](https://themefisher.com)"
+    "copyright": "Copyright © 2023 a blog by [Samrat Jha](https://samratjha.com)"
   },
 
   "contactinfo": {
     "address": "355 S Grand Ave <br/> Los Angeles, CA 90071",
-    "email": "info@bookworm.org",
+    "email": "contact@samratjha.com",
     "phone": "+800 567 1234"
   }
 }
