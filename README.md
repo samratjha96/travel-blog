@@ -1,5 +1,5 @@
 <h1 align=center>Techbro Travels</h1>
-<p align=center>Repository to hold source code for the ultimate no-frills, no bs affiliate marketing pithole travel blog</p>
+<p align=center>Repository to hold source code for the ultimate no-frills, no bs affiliate marketing pithole travel blog<a href="https://techbrotravels.com/" target="_blank">techbrotravels.com</a></p>
 
 
 ### 🖥️ Local setup
