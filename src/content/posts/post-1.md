@@ -1,11 +1,10 @@
 ---
-title: "How to make toys from old Olarpaper"
-description: "meta description"
-date: 2022-04-04T05:00:00Z
-image: "/images/posts/01.jpg"
-categories: ["art"]
-authors: ["Mark Dinn"]
-tags: ["diy", "toy"]
+title: "Punching In and Taking Off: Travel Handbook for the 9 to 5 ers"
+description: "How to travel without quitting your job"
+date: 2023-12-02T05:00:00Z
+image: "/images/posts/intro_post.jpeg"
+categories: ["general"]
+tags: ["general"]
 draft: false
 ---
 
