@@ -1,20 +1,14 @@
 ---
-import Base from "@layouts/Base.astro";
-import Default from "@layouts/Default.astro";
-import PostSingle from "@layouts/PostSingle.astro";
-import { getSinglePage } from "@lib/contentParser.astro";
-
-const getPosts = await getSinglePage("posts");
-const postsSlug = getPosts.map((item) => item.slug);
+import Base from "@/layouts/Base.astro";
+import Default from "@/layouts/Default.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
 
 export async function getStaticPaths() {
-  const posts = await getSinglePage("posts");
   const pages = await getSinglePage("pages");
-  const allPages = [...pages, ...posts];
 
-  const paths = allPages.map((page) => ({
+  const paths = pages.map((page) => ({
     params: {
-      regular: page.slug,
+      regular: page.id,
     },
     props: { page },
   }));
@@ -31,11 +25,5 @@ const { title, meta_title, description, image } = page.data;
   description={description}
   image={image}
 >
-  {
-    postsSlug.includes(page.slug) ? (
-      <PostSingle post={page} />
-    ) : (
-      <Default data={page} />
-    )
-  }
+  <Default data={page} />
 </Base>

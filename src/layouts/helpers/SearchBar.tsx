@@ -1,7 +1,7 @@
 import dateFormat from "@/lib/utils/dateFormat";
 import { humanize, slugify } from "@/lib/utils/textConverter";
 import Fuse from "fuse.js";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BiCalendarEdit, BiCategoryAlt } from "react-icons/bi";
 
 export type SearchItem = {
@@ -92,7 +92,7 @@ export default function SearchBar({ searchList }: Props) {
           <div key={item.slug} className={"col-12 mb-8 sm:col-6"}>
             {item.data.image && (
               <a
-                href={`/blog/${item.slug}`}
+                href={`/${item.slug}`}
                 className="rounded-lg block hover:text-primary overflow-hidden group"
               >
                 <img
@@ -108,36 +108,39 @@ export default function SearchBar({ searchList }: Props) {
             <ul className="mt-6 mb-4 flex flex-wrap items-center text-text">
               <li className="mr-5 flex items-center flex-wrap font-medium">
                 <BiCalendarEdit className="mr-1 h-5 w-5 text-gray-600" />
-                {dateFormat(item.data.date)}
+                <>{dateFormat(item.data.date)}</>
               </li>
               <li className="mr-5 flex items-center flex-wrap">
                 <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-gray-600" />
-
-                <ul>
-                  {item.data.categories.map((category: string, i: number) => (
-                    <li key={category} className="inline-block">
-                      <a
-                        href={`/categories/${slugify(category)}`}
-                        className="mr-2 hover:text-primary font-medium"
-                      >
-                        {humanize(category)}
-                        {i !== item.data.categories.length - 1 && ","}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                <>
+                  <ul>
+                    {item.data.categories.map((category: string, i: number) => (
+                      <li key={i} className="inline-block">
+                        <a
+                          href={`/categories/${slugify(category)}`}
+                          className="mr-2 hover:text-primary font-medium"
+                        >
+                          {humanize(category)}
+                          {i !== item.data.categories.length - 1 && ","}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </>
               </li>
             </ul>
 
             <h3 className="mb-2">
               <a
-                href={`/blog/${item.slug}`}
+                href={`/${item.slug}`}
                 className="block hover:text-primary transition duration-300"
               >
                 {item.data.title}
               </a>
             </h3>
-            <p className="text-text">{item.content?.slice(0, 100)}...</p>
+            <p className="text-text line-clamp-2">
+              {item.content}
+            </p>
           </div>
         ))}
       </div>

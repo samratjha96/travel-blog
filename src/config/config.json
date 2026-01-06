@@ -12,8 +12,7 @@
   },
 
   "settings": {
-    "pagination": 5,
-    "summary_length": 100
+    "pagination": 5
   },
 
   "metadata": {
@@ -22,9 +21,14 @@
     "meta_description": "Travel blog for the simple folk. You don't have to quit your job to travel"
   },
 
+  "google_tag_manager": {
+    "enable": false,
+    "gtm_id": "GTM-XXXXXX"
+  },
+
   "params": {
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023 a blog by [Samrat Jha](https://samratjha.com)"
+    "copyright": "Copyright © 2025 a blog by [Samrat Jha](https://samratjha.com)"
   },
 
   "contactinfo": {

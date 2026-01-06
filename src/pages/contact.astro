@@ -1,14 +1,17 @@
 ---
-import config from "@config/config.json";
-import Base from "@layouts/Base.astro";
-import { markdownify } from "@lib/utils/textConverter";
-import { getEntryBySlug } from "astro:content";
-import { FaAddressCard, FaEnvelope, FaPhoneAlt } from "react-icons/fa/index.js";
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import { getCollection, render } from "astro:content";
+import { FaEnvelope } from "react-icons/fa";
 
-const entry = await getEntryBySlug("pages", "contact");
+const pagesEntries = await getCollection("pages");
+const entry = pagesEntries.find((e) => e.id === "contact");
 const { contact_form_action } = config.params;
 const { email } = config.contactinfo;
-const { title, description, meta_title, image } = entry.data;
+const { title, description, meta_title, image } = entry?.data || {
+  title: "Contact",
+};
 ---
 
 <Base
@@ -29,31 +32,50 @@ const { title, description, meta_title, image } = entry.data;
                 <FaEnvelope className="mr-3 text-primary" />
                 <p class="font-semibold">Email</p>
               </div>
-              <p set:html={markdownify(email)} class="mt-2 leading-5 pl-8 content" />
+              <p
+                set:html={markdownify(email)}
+                class="mt-2 leading-5 pl-8 content"
+              />
             </li>
           </ul>
         </div>
         <div class="sm:col-7 md:col-8">
-          <form class="contact-form row gy-2 justify-center" method="POST" action={contact_form_action}>
+          <form
+            class="contact-form row gy-2 justify-center"
+            method="POST"
+            action={contact_form_action}
+          >
             <div class="lg:col-6">
-              <label class="mb-2 block" for="name">Name <span class="text-red-600">*</span></label>
-              <input class="form-input w-full" name="name" type="text" required />
-            </div>
-            <div class="lg:col-6">
-              <label class="mb-2 block" for="email">Email <span class="text-red-600">*</span></label>
-              <input class="form-input w-full" name="email" type="email" required />
-            </div>
-            <div class="col-12">
-              <label class="mb-2 block" for="subject">Subject</label>
+              <label class="mb-2 block" for="name"
+                >Name <span class="text-red-600">*</span></label
+              >
               <input
                 class="form-input w-full"
-                name="subject"
+                name="name"
                 type="text"
+                required
+              />
+            </div>
+            <div class="lg:col-6">
+              <label class="mb-2 block" for="email"
+                >Email <span class="text-red-600">*</span></label
+              >
+              <input
+                class="form-input w-full"
+                name="email"
+                type="email"
+                required
               />
             </div>
             <div class="col-12">
-              <label class="mb-2 block" for="message">Message <span class="text-red-600">*</span></label>
-              <textarea class="form-textarea w-full" rows="4"></textarea>
+              <label class="mb-2 block" for="subject">Subject</label>
+              <input class="form-input w-full" name="subject" type="text" />
+            </div>
+            <div class="col-12">
+              <label class="mb-2 block" for="message"
+                >Message <span class="text-red-600">*</span></label
+              >
+              <textarea class="form-textarea w-full" rows={4}></textarea>
             </div>
             <div class="col-12">
               <button class="btn btn-primary mt-2">Submit Now</button>

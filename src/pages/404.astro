@@ -1,18 +1,23 @@
 ---
-import Base from "@layouts/Base.astro";
-import { markdownify } from "@lib/utils/textConverter";
-import { getEntryBySlug } from "astro:content";
-const entry = await getEntryBySlug("pages", "404");
-const { Content } = await entry.render();
+import Base from "@/layouts/Base.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import { getCollection, render } from "astro:content";
+
+const pagesEntries = await getCollection("pages");
+const entry = pagesEntries.find((e) => e.id === "404");
+const { Content } = entry ? await render(entry) : { Content: null };
 ---
 
-<Base title={entry.data.title}>
+<Base title={entry?.data.title || "Page Not Found"}>
   <section class="section">
     <div class="container">
       <div class="flex h-[40vh] items-center justify-center">
         <div class="text-center">
-          <h1 class="mb-4" set:html={markdownify(entry.data.title)} />
-          <Content />
+          <h1
+            class="mb-4"
+            set:html={markdownify(entry?.data.title || "404 - Page Not Found")}
+          />
+          {Content && <Content />}
         </div>
       </div>
     </div>
