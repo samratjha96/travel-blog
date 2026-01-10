@@ -6,8 +6,8 @@
     "trailing_slash": false,
     "favicon": "/images/favicons/favicon-32x32.png",
     "logo": "/images/logo-cropped.png",
-    "logo_width": "400px",
-    "logo_height": "100px",
+    "logo_width": "320px",
+    "logo_height": "80px",
     "logo_text": "Techbro Travels"
   },
 
