@@ -2,7 +2,7 @@
 title: "Is Turkey Still Cheap in 2026? What to Actually Expect"
 description: "Turkey's currency has crashed but tourist prices have risen. Here's what travel in Turkey actually costs in 2026 and whether it's still budget-friendly."
 date: 2025-01-06T05:00:00Z
-image: "/images/posts/turkey/Bazaar.jpg"
+image: "/images/posts/turkey/Bazaar.webp"
 authors: ["Lulu the pug"]
 categories: ["guides"]
 tags: ["turkey", "travel-costs", "budget-travel", "istanbul", "cappadocia"]
