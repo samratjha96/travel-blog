@@ -2,7 +2,7 @@
 title: "Cappadocia Hot Air Balloon: Is It Worth €250? Honest Review"
 description: "Breaking down the real cost of a Cappadocia hot air balloon ride, what you actually get, and whether it's worth the money. Plus tips for booking."
 date: 2025-01-08T05:00:00Z
-image: "/images/posts/turkey/IMG_1984.webp"
+image: "/images/posts/turkey/IMG_1984.jpg"
 authors: ["Lulu the pug"]
 categories: ["guides"]
 tags: ["turkey", "cappadocia", "hot-air-balloon", "travel-costs", "bucket-list"]
@@ -47,7 +47,7 @@ The cheap operators (€100-150) often have larger baskets with 20-28 people cra
 
 You'll be driven to the launch site where dozens of balloons are being inflated simultaneously. It's chaos in the best way. Then you climb into the basket (they help you, it's awkward for everyone), and within minutes you're floating.
 
-![Hot air balloons rising over Cappadocia at sunrise](/images/posts/turkey/IMG_1984.webp)
+![Hot air balloons rising over Cappadocia at sunrise](/images/posts/turkey/IMG_1984.jpg)
 
 The flight itself is surreal. You drift over fairy chimneys, through valleys, and past other balloons. The pilot controls altitude by heating the air, so you'll rise and dip throughout the flight. At some points you're high enough to see the entire landscape; at others you're skimming just above the rock formations.
 

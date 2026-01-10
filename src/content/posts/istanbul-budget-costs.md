@@ -2,7 +2,7 @@
 title: "Istanbul on a Budget: What Everything Actually Costs"
 description: "A complete breakdown of Istanbul costs including transport, food, attractions, and daily budget. Real prices from my 2023 trip."
 date: 2025-01-07T05:00:00Z
-image: "/images/posts/turkey/IMG_2742.webp"
+image: "/images/posts/turkey/IMG_2742.jpg"
 authors: ["Lulu the pug"]
 categories: ["guides"]
 tags: ["turkey", "istanbul", "travel-costs", "budget-travel"]
@@ -68,7 +68,7 @@ This is where Istanbul shines. You can eat incredibly well for very little.
 - Baklava from a good shop
 - Fresh fish by the Bosphorus
 
-![Food stalls at the Grand Bazaar](/images/posts/turkey/Bazaar.webp)
+![Food stalls at the Grand Bazaar](/images/posts/turkey/Bazaar.jpg)
 
 ## Attractions and Entrance Fees
 
@@ -87,7 +87,7 @@ This is where Istanbul can add up if you're not careful.
 | Bosphorus ferry (public) | 17 lira (~$0.50)         |
 | Bosphorus tour boat      | 200-400 lira (~$6-12)    |
 
-![Inside the Hagia Sophia](/images/posts/turkey/IMG_2742.webp)
+![Inside the Hagia Sophia](/images/posts/turkey/IMG_2742.jpg)
 
 **Money-saving tips:**
 

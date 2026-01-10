@@ -2,7 +2,7 @@
 title: "5 Days in Turkey: Cappadocia & Istanbul Costs, Itinerary & Tips"
 description: "Complete cost breakdown for 5 days in Turkey. Hot air balloon prices, tour costs, Istanbul budget, and practical tips from my 2023 trip."
 date: 2025-01-09T05:00:00Z
-image: "/images/posts/turkey/IMG_3236.webp"
+image: "/images/posts/turkey/IMG_3236.jpg"
 authors: ["Lulu the pug"]
 categories: ["guides"]
 tags:
@@ -58,9 +58,9 @@ I stayed at **Caravanserai Inn** in Göreme. Central location, comfortable rooms
 
 The move on day one is to book a [sunset ATV tour](https://www.airbnb.com/experiences/4037378). I found mine through Airbnb Experiences for $32/person, and it was two hours of riding through Swords Valley, Red Valley, Rose Valley, and Love Valley. The landscapes are absolutely ridiculous. You've seen the photos online, but trust me, they don't do it justice. The tour includes hotel pickup and dropoff, so you don't have to worry about logistics.
 
-![ATV tour through Cappadocia](/images/posts/turkey/ATV_TOUR.webp)
+![ATV tour through Cappadocia](/images/posts/turkey/ATV_TOUR.jpg)
 
-![Cappadocia valley views](/images/posts/turkey/ATV_TOUR_2.webp)
+![Cappadocia valley views](/images/posts/turkey/ATV_TOUR_2.jpg)
 
 For dinner, we hit **Göreme Han Restaurant**. About $25 for two people with solid Turkish food. Nothing revolutionary, but good portions and a nice atmosphere after a dusty ATV ride.
 
@@ -70,7 +70,7 @@ For dinner, we hit **Göreme Han Restaurant**. About $25 for two people with sol
 
 The hot air balloon is the thing everyone comes to Cappadocia for, and honestly, it lives up to the hype. I went with Brother Balloons and paid €480 for two people (roughly $260/person). My advice: book directly with a reputable company rather than through random tour agencies that'll upcharge you for the same experience.
 
-![Hot air balloons over Cappadocia](/images/posts/turkey/IMG_1984.webp)
+![Hot air balloons over Cappadocia](/images/posts/turkey/IMG_1984.jpg)
 
 After landing, you'll have time to crash for a bit before the **Green Tour** pickup at 9:30am. I booked through Viator, but the actual operator was Hereke Travel. They're solid and I ended up using them again.
 
@@ -116,15 +116,15 @@ I joined a [walking tour through Airbnb Experiences](https://www.airbnb.com/expe
 - Hippodrome
 - Basilica Cistern (an extra 350 lira per person, but worth it if you're into history. The atmosphere down there is unreal)
 
-![Basilica Cistern](/images/posts/turkey/Sistern.webp)
+![Basilica Cistern](/images/posts/turkey/Sistern.jpg)
 
 - Grand Bazaar (more on this later)
 - Hagia Sophia
 - Blue Mosque
 
-![Inside Hagia Sophia](/images/posts/turkey/IMG_2742.webp)
+![Inside Hagia Sophia](/images/posts/turkey/IMG_2742.jpg)
 
-![Hagia Sophia interior](/images/posts/turkey/IMG_2795.webp)
+![Hagia Sophia interior](/images/posts/turkey/IMG_2795.jpg)
 
 **A note on the mosques:** there's a dress code. Shoulders and knees need to be covered, and women need head coverings. Men, wear pants or at least shorts that cover the knees. If you forget, they sell scarves and coverups right outside, but you'll pay tourist prices. Better to bring your own.
 
@@ -132,7 +132,7 @@ For lunch, I grabbed a lamb pide (basically Turkish flatbread pizza) at some res
 
 That evening, I did a [Bosphorus sunset cruise](https://www.airbnb.com/experiences/1590116) booked through Airbnb, and this ended up being one of the highlights of the trip. You meet at the pier, cruise around the strait for a couple hours, and they provide free drinks and finger food. The views are unreal. Watching the sun set over the Istanbul skyline from the water, with mosques and minarets silhouetted against the sky, is something else entirely. It's a nice, low-effort way to end a long day of walking, and I'd do it again in a heartbeat.
 
-![Sunset on the Bosphorus](/images/posts/turkey/IMG_3236.webp)
+![Sunset on the Bosphorus](/images/posts/turkey/IMG_3236.jpg)
 
 ### Day 5: Asian Side + Grand Bazaar + Nightlife
 
@@ -150,7 +150,7 @@ Here's what I paid:
 
 The bazaar is absolutely massive and you will get lost. That's fine. Just embrace it and wander. You'll stumble into interesting corners you wouldn't have found otherwise.
 
-![Grand Bazaar](/images/posts/turkey/Bazaar.webp)
+![Grand Bazaar](/images/posts/turkey/Bazaar.jpg)
 
 I also popped into **St. Anthony of Padua Basilica** nearby, which is worth a quick visit if you're into architecture.
 
@@ -174,7 +174,7 @@ In the afternoon, I took the ferry from Kabataş to the Princes' Islands.
 
 I went to **Büyükada**, the largest of the islands. No cars are allowed, so you get around by bike or on foot.
 
-![Princes' Islands](/images/posts/turkey/IMG_3270.webp)
+![Princes' Islands](/images/posts/turkey/IMG_3270.jpg)
 
 - Bike rental runs about 50 lira per person per hour
 - Fair warning: the island loop isn't easy. Expect hills and unpaved sections, so prepare to work for it
