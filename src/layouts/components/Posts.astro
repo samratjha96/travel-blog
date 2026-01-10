@@ -21,7 +21,7 @@ const { className, posts, fluid } = Astro.props;
 >
   {
     posts.map((post, i: number) => (
-      <div class={i === 0 && fluid != false ? "col-12" : "col-12 sm:col-6"}>
+      <div class="col-12 sm:col-6">
         {post.data.image && (
           <a
             href={`/blog/${post.id}`}
@@ -31,8 +31,8 @@ const { className, posts, fluid } = Astro.props;
               class="group-hover:scale-[1.03] transition duration-300 w-full"
               src={post.data.image}
               alt={post.data.title}
-              width={i === 0 ? 925 : 445}
-              height={i === 0 ? 475 : 230}
+              width={445}
+              height={230}
             />
           </a>
         )}

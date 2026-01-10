@@ -1,11 +1,9 @@
 ---
 title: Lulu the pug
 image: /images/authors/pug_author.jpeg
-description: this is meta description
+description: Chief Bork Officer and travel companion at Techbro Travels
 social:
-  facebook: https://www.facebook.com/
-  twitter: https://www.twitter.com/
-  instagram: https://www.instagram.com/
+  instagram: https://www.instagram.com/samratjha_
 ---
 
-This is my cute dog Lulu. She writes all my posts
+This is my cute dog Lulu. She writes all my posts.

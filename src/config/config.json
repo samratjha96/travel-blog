@@ -6,8 +6,8 @@
     "trailing_slash": false,
     "favicon": "/images/favicons/favicon-32x32.png",
     "logo": "/images/logo-cropped.png",
-    "logo_width": "180px",
-    "logo_height": "50px",
+    "logo_width": "400px",
+    "logo_height": "100px",
     "logo_text": "Techbro Travels"
   },
 
@@ -21,19 +21,12 @@
     "meta_description": "Travel blog for the simple folk. You don't have to quit your job to travel"
   },
 
-  "google_tag_manager": {
-    "enable": false,
-    "gtm_id": "GTM-XXXXXX"
-  },
-
   "params": {
-    "contact_form_action": "#",
-    "copyright": "Copyright © 2025 a blog by [Samrat Jha](https://samratjha.com)"
+    "copyright": "Copyright © 2026 a blog by [Samrat Jha](https://samratjha.com)"
   },
 
   "contactinfo": {
-    "address": "355 S Grand Ave <br/> Los Angeles, CA 90071",
-    "email": "contact@samratjha.com",
-    "phone": "+800 567 1234"
+    "calendar": "https://cal.com/samrat-jha-akdwhz/30min",
+    "website": "https://samratjha.com"
   }
 }
