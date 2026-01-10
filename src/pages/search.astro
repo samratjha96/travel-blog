@@ -1,14 +1,14 @@
 ---
-import Base from "@layouts/Base.astro";
-import Search from "@layouts/Search";
-import { getSinglePage } from "@lib/contentParser.astro";
+import Base from "@/layouts/Base.astro";
+import Search from "@/layouts/Search";
+import { getSinglePage } from "@/lib/contentParser.astro";
 
 // Retrieve all articles
 const posts = await getSinglePage("posts");
 
 // List of items to search in
 const searchList = posts.map((item) => ({
-  slug: item.slug,
+  slug: item.id,
   data: item.data,
   content: item.body,
 }));

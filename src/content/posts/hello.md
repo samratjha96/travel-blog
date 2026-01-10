@@ -3,6 +3,7 @@ title: "Clocking In and Taking Off: Travel Handbook for the 9 to 5 ers"
 description: "How to travel without quitting your job"
 date: 2023-12-02T05:00:00Z
 image: "/images/posts/intro_post.jpeg"
+authors: ["Lulu the pug"]
 categories: ["general"]
 tags: ["general"]
 draft: false

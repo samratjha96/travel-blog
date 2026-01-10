@@ -1,14 +1,16 @@
 ---
-import config from "@config/config.json";
-import Base from "@layouts/Base.astro";
-import { markdownify } from "@lib/utils/textConverter";
-import { getEntryBySlug } from "astro:content";
-import { FaAddressCard, FaEnvelope, FaPhoneAlt } from "react-icons/fa/index.js";
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import { getCollection } from "astro:content";
+import { FaCalendarAlt, FaGlobe } from "react-icons/fa";
 
-const entry = await getEntryBySlug("pages", "contact");
-const { contact_form_action } = config.params;
-const { email } = config.contactinfo;
-const { title, description, meta_title, image } = entry.data;
+const pagesEntries = await getCollection("pages");
+const entry = pagesEntries.find((e) => e.id === "contact");
+const contactinfo = config.contactinfo as unknown as { calendar: string; website: string };
+const { title, description, meta_title, image } = entry?.data || {
+  title: "Contact",
+};
 ---
 
 <Base
@@ -20,45 +22,35 @@ const { title, description, meta_title, image } = entry.data;
   <section class="section">
     <div class="container">
       <h1 set:html={markdownify(title)} class="h2 page-heading" />
-      <div class="row md:gx-5 gy-5">
-        <div class="sm:col-5 md:col-4">
-          <p class="mb-8 text-2xl font-bold text-theme-dark">Contact Info</p>
-          <ul class="flex flex-col space-y-8">
+      <div class="row justify-center">
+        <div class="col-12 md:col-8 lg:col-6">
+          <p class="mb-8 text-lg text-center">
+            Want to chat about travel, ask a question, or just say hi? Book a time or find me online.
+          </p>
+          <ul class="flex flex-col space-y-6">
             <li>
-              <div class="flex text-theme-dark items-center text-xl">
-                <FaEnvelope className="mr-3 text-primary" />
-                <p class="font-semibold">Email</p>
-              </div>
-              <p set:html={markdownify(email)} class="mt-2 leading-5 pl-8 content" />
+              <a
+                href={contactinfo.calendar}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center text-xl text-theme-dark hover:text-primary transition-colors"
+              >
+                <FaCalendarAlt className="mr-3 text-primary" />
+                <span class="font-semibold">Book a 30-min chat</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={contactinfo.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center text-xl text-theme-dark hover:text-primary transition-colors"
+              >
+                <FaGlobe className="mr-3 text-primary" />
+                <span class="font-semibold">samratjha.com</span>
+              </a>
             </li>
           </ul>
-        </div>
-        <div class="sm:col-7 md:col-8">
-          <form class="contact-form row gy-2 justify-center" method="POST" action={contact_form_action}>
-            <div class="lg:col-6">
-              <label class="mb-2 block" for="name">Name <span class="text-red-600">*</span></label>
-              <input class="form-input w-full" name="name" type="text" required />
-            </div>
-            <div class="lg:col-6">
-              <label class="mb-2 block" for="email">Email <span class="text-red-600">*</span></label>
-              <input class="form-input w-full" name="email" type="email" required />
-            </div>
-            <div class="col-12">
-              <label class="mb-2 block" for="subject">Subject</label>
-              <input
-                class="form-input w-full"
-                name="subject"
-                type="text"
-              />
-            </div>
-            <div class="col-12">
-              <label class="mb-2 block" for="message">Message <span class="text-red-600">*</span></label>
-              <textarea class="form-textarea w-full" rows="4"></textarea>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary mt-2">Submit Now</button>
-            </div>
-          </form>
         </div>
       </div>
     </div>

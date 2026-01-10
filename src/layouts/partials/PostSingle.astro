@@ -1,18 +1,19 @@
 ---
-import { Image } from "@astrojs/image/components";
-import Share from "@components/Share.astro";
-import SimilarPosts from "@components/SimilarPosts.astro";
-import { getSinglePage } from "@lib/contentParser.astro";
-import dateFormat from "@lib/utils/dateFormat";
-import similerItems from "@lib/utils/similarItems";
-import { humanize,markdownify,slugify } from "@lib/utils/textConverter";
-import { BiCalendarEdit,BiCategoryAlt } from "react-icons/bi/index.js";
+import Share from "@/components/Share.astro";
+import SimilarPosts from "@/components/SimilarPosts.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import dateFormat from "@/lib/utils/dateFormat";
+import similerItems from "@/lib/utils/similarItems";
+import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
+import { Image } from "astro:assets";
+import { render } from "astro:content";
+import { BiCalendarEdit, BiCategoryAlt } from "react-icons/bi";
 
 const allAuthors = await getSinglePage("authors");
 const posts = await getSinglePage("posts");
 const { post } = Astro.props;
-const similarPosts = similerItems(post, posts, post.slug);
-const { Content } = await post.render();
+const similarPosts = similerItems(post, posts, post.id);
+const { Content } = await render(post);
 const { title, description, authors, categories, image, date, tags } =
   post.data;
 ---
@@ -31,9 +32,9 @@ const { title, description, authors, categories, image, date, tags } =
                     .map((author: string) => slugify(author))
                     .includes(slugify(author.data.title))
                 )
-                .map((author, i) => (
+                .map((author) => (
                   <a
-                    href={`/authors/${slugify(author.slug)}`}
+                    href={`/authors/${slugify(author.id)}`}
                     class="flex items-center hover:text-primary font-medium"
                   >
                     {author.data.image && (
@@ -52,11 +53,11 @@ const { title, description, authors, categories, image, date, tags } =
           </li>
           <li class="mx-3 flex items-center flex-wrap font-medium">
             <BiCalendarEdit className="mr-1 h-5 w-5 text-gray-600" />
-            <>{dateFormat(date)}</>
+            {dateFormat(date)}
           </li>
           <li class="mx-3 flex items-center flex-wrap">
             <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-gray-600" />
-            <>
+
             <ul>
               {
                 categories.map((category: string, i: number) => (
@@ -65,27 +66,29 @@ const { title, description, authors, categories, image, date, tags } =
                       href={`/categories/${slugify(category)}`}
                       class="mr-2 hover:text-primary font-medium"
                     >
-                      {humanize(category)}{i !== post.data.categories.length - 1 && ","}
+                      {humanize(category)}
+                      {i !== post.data.categories.length - 1 && ","}
                     </a>
                   </li>
                 ))
               }
             </ul>
-            </>
           </li>
         </ul>
       </div>
 
       <div class="col-12 mt-8 mb-2">
-        {image && (
-          <Image
-            src={image}
-            height={500}
-            width={1000}
-            alt={title}
-            class="rounded-lg"
-          />
-        )}
+        {
+          image && (
+            <Image
+              src={image}
+              height={500}
+              width={1000}
+              alt={title}
+              class="rounded-lg"
+            />
+          )
+        }
       </div>
 
       <div class="md:col-10">
@@ -99,7 +102,7 @@ const { title, description, authors, categories, image, date, tags } =
                 <li class="inline-block">
                   <a
                     href={`/tags/${slugify(tag)}`}
-                    class="block rounded-lg bg-theme-light px-4 py-2 font-semibold text-dark text-sm hover:text-primary transition duration-300"
+                    class="block rounded-lg bg-light px-4 py-2 font-semibold text-dark text-sm hover:text-primary transition duration-300"
                   >
                     #{humanize(tag)}
                   </a>
@@ -111,7 +114,7 @@ const { title, description, authors, categories, image, date, tags } =
             className="social-share mb-4"
             title={title}
             description={description}
-            slug={post.slug}
+            slug={post.id}
           />
         </div>
       </div>
