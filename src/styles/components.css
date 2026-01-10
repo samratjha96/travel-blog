@@ -76,7 +76,29 @@
 .content {
   @apply prose max-w-none prose-headings:font-bold prose-h1:mb-4 prose-h1:text-h1-sm prose-h2:mb-4 prose-h2:mt-4 prose-h2:text-h2-sm prose-h3:mt-4 prose-h3:text-h3-sm prose-h4:mt-4 prose-h5:mb-4 prose-h6:mb-6 prose-blockquote:rounded-lg prose-blockquote:border-primary prose-blockquote:bg-light prose-blockquote:px-7 prose-blockquote:py-3 prose-blockquote:text-lg prose-blockquote:leading-8 prose-pre:px-6 prose-pre:py-5 md:prose-h1:text-h1 md:prose-h2:text-h2 md:prose-h3:text-h3;
   @apply prose-a:text-primary prose-a:transition prose-a:duration-200 prose-a:hover:text-dark;
-  @apply prose-img:rounded-lg;
+  @apply prose-img:rounded-lg prose-img:max-w-[500px] prose-img:mx-auto;
+
+  /* side-by-side images when consecutive */
+  p:has(> img) + p:has(> img) {
+    @apply -mt-4;
+  }
+
+  p:has(> img):has(+ p > img) {
+    @apply float-left w-1/2 pr-2;
+  }
+
+  p:has(> img) + p:has(> img) {
+    @apply float-right w-1/2 pl-2;
+  }
+
+  p:has(> img) + p:has(> img) + *:not(p:has(> img)) {
+    @apply clear-both;
+  }
+
+  p:has(> img):has(+ p > img) img,
+  p:has(> img) + p:has(> img) img {
+    @apply max-w-full;
+  }
   @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:border-border prose-table:before:content-[""];
   @apply prose-thead:border-border prose-thead:bg-light;
   @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-text-dark;
