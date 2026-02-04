@@ -70,7 +70,7 @@ This was the day the Old City really clicked. We finally got into the **Palace o
 
 If you want to see more than Baku, this is the easiest and most memorable day. We booked a local tour mostly for transport and did three quick stops: mud volcanoes, Gobustan's rock art, and Yanardag's burning hillside. Gobustan in particular is worth it for the scale and history.
 
-**My tour:** TES Tours (mostly transportation)
+**My tour:** [TES Tours](https://testour.az/tour/day-trip-baku-group-tour) (mostly transportation)
 
 - **Mud volcanoes:** quick stop, cool but short
 - **Gobustan National Park:** ancient cave paintings and wide views
