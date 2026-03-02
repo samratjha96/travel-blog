@@ -2,7 +2,6 @@
 title: "Georgian Wine Is 8,000 Years Old and Nothing Like What You're Used To"
 description: "Georgian wine is made in buried clay pots, tastes like nothing from Europe, and costs almost nothing. Here's how to understand it, what to order, and where to find the good stuff in Tbilisi."
 date: 2026-03-02T05:00:00Z
-image: "/images/posts/georgia/georgian-wine-qvevri.jpg"
 authors: ["Lulu the pug"]
 categories: ["guides"]
 tags: ["georgia", "tbilisi", "wine", "georgian wine", "amber wine", "kakheti"]

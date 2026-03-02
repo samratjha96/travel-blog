@@ -2,7 +2,6 @@
 title: "Tbilisi, Georgia: What It Actually Costs (And Why Everyone Is Going in 2026)"
 description: "A practical Tbilisi budget guide with real prices for food, accommodation, transport, and the sulphur baths. Includes a 3-day itinerary and honest tips on what to skip."
 date: 2026-03-02T05:00:00Z
-image: "/images/posts/georgia/tbilisi-cover.jpg"
 authors: ["Lulu the pug"]
 categories: ["guides"]
 tags: ["georgia", "tbilisi", "budget travel", "caucasus", "itinerary", "travel-costs"]
