@@ -15,11 +15,30 @@ tags:
     "budget-travel",
   ]
 draft: false
+faqs:
+  - question: "How much does a hot air balloon ride cost in Cappadocia?"
+    answer: "Expect to pay 200 to 250 euros per person with a reputable company. Book directly with the balloon company rather than through a middleman tour agency."
+  - question: "Is the Green Tour or Red Tour better in Cappadocia?"
+    answer: "Both are worth doing if you have time. The Green Tour covers underground cities and the Ihlara Valley hike. The Red Tour covers the fairy chimneys and the Open Air Museum. If you can only pick one, the Green Tour is more distinctive."
+  - question: "How do I get around Istanbul?"
+    answer: "The IstanbulKart works on all public transit including tram and metro. One card works for multiple people. Top it up at any metro station. The transit system covers most tourist areas."
+  - question: "Is Kadikoy worth visiting in Istanbul?"
+    answer: "If you have 3 or more days in Istanbul, yes. With only 2 days, prioritize Topkapi Palace, the Grand Bazaar, and the Princes Islands instead."
+  - question: "How do I get from Cappadocia to Istanbul?"
+    answer: "Fly. It is a 10-plus hour drive otherwise. Flights take about an hour and are cheap. You will fly from either Nevsehir or Kayseri airport near Goreme. Arrange the transfer through your hotel."
+  - question: "How much should I budget per day in Turkey?"
+    answer: "For a mid-range trip, budget around $100 to $150 per day for two people. That covers a decent hotel, tours, meals at sit-down restaurants, and attractions."
+  - question: "Is Turkey expensive for tourists?"
+    answer: "No, not compared to Western Europe. Meals are $10 to $25 for two, transit is cheap, and even major attractions like Topkapi Palace are under $20. The main splurge is the hot air balloon."
+  - question: "Should I use cash or card in Turkey?"
+    answer: "Both work. Cards are accepted at most restaurants and shops in tourist areas. You will need cash for smaller vendors, the Grand Bazaar, and some transit. Avoid exchanging money at the airport as the rates are poor."
 ---
 
 5 days, 2 cities, and all the numbers you actually need. I'm not going to tell you Turkey changed my life. Instead, I'm going to tell you what I did, what I paid, and what's actually worth your time.
 
 **Note:** This trip was in June 2023. Prices may have shifted, but the logistics and tips should still hold up.
+
+## Table of contents
 
 ## The Quick Numbers
 

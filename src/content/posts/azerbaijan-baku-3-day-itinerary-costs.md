@@ -7,9 +7,18 @@ authors: ["Lulu the pug"]
 categories: ["guides"]
 tags: ["azerbaijan", "baku", "itinerary", "travel-costs", "gobustan", "yanardag"]
 draft: false
+faqs:
+  - question: "Is 3 days in Baku enough?"
+    answer: "Yes. You can see the Old City and major sites and do a day trip to Gobustan without rushing."
+  - question: "Do you need a tour for Gobustan?"
+    answer: "Not required, but a guided tour is the simplest way to see Gobustan and Yanardag in one day without renting a car."
+  - question: "Is Baku walkable?"
+    answer: "Very. If you stay in the Old City, most of the main sights are accessible on foot."
 ---
 
 If you're trying to plan Azerbaijan fast, here's the short answer: base yourself in **Baku's Old City**, walk almost everywhere, and do **one day trip to Gobustan + Yanardag**. I visited in **June 2023** and tracked real prices in manat so you can budget without guesswork.
+
+## Table of contents
 
 ## Azerbaijan Itinerary Snapshot
 

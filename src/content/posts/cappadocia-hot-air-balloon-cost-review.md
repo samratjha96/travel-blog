@@ -7,9 +7,22 @@ authors: ["Lulu the pug"]
 categories: ["guides"]
 tags: ["turkey", "cappadocia", "hot-air-balloon", "travel-costs", "bucket-list"]
 draft: false
+faqs:
+  - question: "What if my Cappadocia hot air balloon flight gets cancelled?"
+    answer: "Weather cancellations are extremely common. Reputable companies will reschedule you for another morning at no charge or give a full refund. Always confirm their cancellation policy before booking and build extra days into your itinerary."
+  - question: "How long is a Cappadocia hot air balloon flight?"
+    answer: "Usually 60 to 90 minutes in the air. The whole experience from hotel pickup to drop-off is about 3 to 4 hours."
+  - question: "Is a Cappadocia hot air balloon safe?"
+    answer: "Cappadocia has a strong safety record with experienced pilots and decades of balloon tours. It is an adventure activity and accidents have happened. Check your company's safety certifications before booking."
+  - question: "Can you book a Cappadocia balloon last minute?"
+    answer: "Sometimes, but it is risky. April through October books up days or weeks in advance. If you are flexible on dates you might find a last-minute spot, but do not count on it."
+  - question: "What is the best time of year for a Cappadocia hot air balloon?"
+    answer: "April to May and September to October have the best combination of weather, light, and moderate crowds. Summer is hot but flyable. Winter has more cancellations but fewer tourists."
 ---
 
 Let's cut to the chase: yes, the Cappadocia hot air balloon ride is worth it. But I'm not going to just tell you that and move on. Here's everything you need to know about the cost, the experience, and how to book without getting ripped off.
+
+## Table of contents
 
 ## The Real Cost
 

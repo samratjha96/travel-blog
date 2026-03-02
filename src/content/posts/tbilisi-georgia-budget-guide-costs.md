@@ -6,11 +6,26 @@ authors: ["Lulu the pug"]
 categories: ["guides"]
 tags: ["georgia", "tbilisi", "budget travel", "caucasus", "itinerary", "travel-costs"]
 draft: false
+faqs:
+  - question: "Is Tbilisi actually cheap?"
+    answer: "Yes. A full dinner with wine and starters costs what a single main course runs in Western Europe. Budget travelers can get by on $30-45 per day including accommodation, food, and transport."
+  - question: "Is Tbilisi safe?"
+    answer: "Generally yes. Violent crime against tourists is uncommon. The main issue is a bar scam near Rustaveli Avenue where strangers invite you to unfamiliar bars with inflated bills. Pickpocketing happens on the metro and at the Dry Bridge Market. Georgian drivers do not yield to pedestrians."
+  - question: "Is English spoken in Tbilisi?"
+    answer: "Younger Georgians and anyone in the hospitality industry speak English. Older locals usually do not. You will get by fine either way."
+  - question: "Do you need cash in Tbilisi?"
+    answer: "Mostly yes. Card acceptance is improving but inconsistent outside hotels and larger restaurants. Withdraw Georgian lari from ATMs inside bank branches rather than standalone street machines."
+  - question: "Is 3 days in Tbilisi enough?"
+    answer: "Enough to see the main things and eat well. Four days lets you do a day trip. Mtskheta, the ancient capital 30 minutes away, is the easiest option."
+  - question: "Can you combine Tbilisi with other countries in the region?"
+    answer: "Yes. Georgia sits between Armenia and Azerbaijan and overland crossings are easy. The marshrutka from Tbilisi to Baku costs $10-15 and runs overnight."
 ---
 
 Tbilisi just hit #2 on Tripadvisor's most trending destinations for 2026. The city is cheap, the food is excellent, the wine costs almost nothing, and the old town looks like nothing else in the region.
 
 Here's what it actually costs and what's worth your time.
+
+## Table of contents
 
 ## The Short Answer on Cost
 

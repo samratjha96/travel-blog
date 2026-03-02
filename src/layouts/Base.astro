@@ -27,11 +27,50 @@ export interface Props {
   image?: string;
   noindex?: boolean;
   canonical?: string;
+  publishedTime?: string;
+  faqs?: { question: string; answer: string }[];
 }
 
 // distructure frontmatters
-const { title, meta_title, description, image, noindex, canonical } =
+const { title, meta_title, description, image, noindex, canonical, publishedTime, faqs } =
   Astro.props;
+
+const resolvedTitle = plainify(meta_title ? meta_title : title ? title : config.site.title);
+const resolvedDescription = plainify(description ? description : config.metadata.meta_description);
+const resolvedImage = `${config.site.base_url}${image ? image : config.metadata.meta_image}`;
+const resolvedUrl = `${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`;
+
+const articleSchema = publishedTime ? JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": resolvedTitle,
+  "description": resolvedDescription,
+  "image": resolvedImage,
+  "datePublished": publishedTime,
+  "author": {
+    "@type": "Person",
+    "name": config.metadata.meta_author,
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": config.site.title,
+    "url": config.site.base_url,
+  },
+  "url": resolvedUrl,
+}) : null;
+
+const faqSchema = faqs?.length ? JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer,
+    },
+  })),
+}) : null;
 ---
 
 <!doctype html>
@@ -77,9 +116,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     />
 
     <!-- title -->
-    <title>
-      {plainify(meta_title ? meta_title : title ? title : config.site.title)}
-    </title>
+    <title>{resolvedTitle}</title>
 
     <!-- canonical url -->
     {canonical && <link rel="canonical" href={canonical} item-prop="url" />}
@@ -88,12 +125,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     {noindex && <meta name="robots" content="noindex,nofollow" />}
 
     <!-- meta-description -->
-    <meta
-      name="description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
+    <meta name="description" content={resolvedDescription} />
 
     <ClientRouter />
 
@@ -101,58 +133,30 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta name="author" content={config.metadata.meta_author} />
 
     <!-- og-title -->
-    <meta
-      property="og:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title
-      )}
-    />
+    <meta property="og:title" content={resolvedTitle} />
 
     <!-- og-description -->
-    <meta
-      property="og:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
-    />
+    <meta property="og:description" content={resolvedDescription} />
+    <meta property="og:type" content={publishedTime ? "article" : "website"} />
+    <meta property="og:url" content={resolvedUrl} />
+    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
 
     <!-- twitter-title -->
-    <meta
-      name="twitter:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title
-      )}
-    />
+    <meta name="twitter:title" content={resolvedTitle} />
 
     <!-- twitter-description -->
-    <meta
-      name="twitter:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
+    <meta name="twitter:description" content={resolvedDescription} />
 
     <!-- og-image -->
-    <meta
-      property="og:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
+    <meta property="og:image" content={resolvedImage} />
 
     <!-- twitter-image -->
-    <meta
-      name="twitter:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
+    <meta name="twitter:image" content={resolvedImage} />
     <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- JSON-LD structured data -->
+    {articleSchema && <script type="application/ld+json" set:html={articleSchema} />}
+    {faqSchema && <script type="application/ld+json" set:html={faqSchema} />}
 
     <!-- Umami Analytics -->
     <script defer src="https://umami.techbrohomelab.xyz/script.js" data-website-id="3bef0a87-02f1-4e07-a774-6bafeccc0e67"></script>
