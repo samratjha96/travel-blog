@@ -98,4 +98,4 @@ The best bottles cost under $15. The worst still cost under $5.
 
 ---
 
-*Planning a trip to Tbilisi? The [Tbilisi city guide](/posts/tbilisi-georgia-budget-guide-costs/) covers costs, itinerary, and where to stay.*
+*Planning a trip to Tbilisi? The [Tbilisi city guide](/blog/tbilisi-georgia-budget-guide-costs/) covers costs, itinerary, and where to stay.*

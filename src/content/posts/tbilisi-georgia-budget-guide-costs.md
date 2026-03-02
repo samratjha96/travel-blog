@@ -190,6 +190,6 @@ Mostly, yes. Card acceptance is improving but inconsistent outside hotels and la
 Enough to see the main things and eat well. Four days lets you do a day trip. Mtskheta (the ancient capital, 30 minutes away) is the easy option.
 
 **Can you combine it with other countries in the region?**
-Georgia sits between Armenia and Azerbaijan; overland crossings are easy. If you're also doing [Baku](/posts/azerbaijan-baku-3-day-itinerary-costs/), the marshrutka between the two cities costs $10–15 and runs overnight.
+Georgia sits between Armenia and Azerbaijan; overland crossings are easy. If you're also doing [Baku](/blog/azerbaijan-baku-3-day-itinerary-costs/), the marshrutka between the two cities costs $10–15 and runs overnight.
 
 ---
