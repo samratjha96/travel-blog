@@ -22,7 +22,13 @@ If a post recommends a hot air balloon operator, it's because I flew with them. 
 
 #### Programs I participate in
 
-As links are added, this section lists the affiliate programs currently in use (for example: booking platforms, tour marketplaces, and travel insurance providers). Each program pays a commission on completed bookings made through links on this site.
+**Viator (a Tripadvisor company)** — tours and activities booked through Viator links on this site earn me an 8% commission on completed bookings. Tracking and payouts are handled by Partnerize; their cookie window is 30 days. Details: [Viator's affiliate terms](https://www.viator.com/affiliate-program).
+
+This section is updated as programs are added or removed.
+
+#### A note on tours I haven't done
+
+Where I link to a bookable tour, it's because I personally did that activity (or an equivalent from the same category that the post is actually about — e.g., the hot air balloon flight I took in Cappadocia). I don't embed "related tours" widgets or link to experiences I haven't had, even when a platform makes it easy to. If a post links a tour, the post is about that experience.
 
 #### What this doesn't change
 
