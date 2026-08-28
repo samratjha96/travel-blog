@@ -38,6 +38,7 @@ const postsCollection = defineCollection({
     authors: z.array(z.string()).default(["Admin"]),
     tags: z.array(z.string()).default(["others"]),
     draft: z.boolean().optional(),
+    affiliate: z.boolean().optional(),
     faqs: z
       .array(z.object({ question: z.string(), answer: z.string() }))
       .optional(),

@@ -7,6 +7,7 @@ authors: ["Lulu the pug"]
 categories: ["guides"]
 tags: ["turkey", "istanbul", "travel-costs", "budget-travel"]
 draft: false
+affiliate: true
 ---
 
 Istanbul has a reputation for being cheap, but is it actually? I spent 3 days there in 2023 and tracked what I spent. Here's the real breakdown.

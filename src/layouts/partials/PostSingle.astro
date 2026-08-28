@@ -14,7 +14,7 @@ const posts = await getSinglePage("posts");
 const { post } = Astro.props;
 const similarPosts = similerItems(post, posts, post.id);
 const { Content } = await render(post);
-const { title, description, authors, categories, image, date, tags } =
+const { title, description, authors, categories, image, date, tags, affiliate } =
   post.data;
 ---
 
@@ -92,6 +92,21 @@ const { title, description, authors, categories, image, date, tags } =
       </div>
 
       <div class="md:col-10">
+        {
+          affiliate && (
+            <aside
+              class="mb-8 rounded-lg border border-border bg-light px-5 py-4 text-sm leading-relaxed text-text"
+              aria-label="Affiliate disclosure"
+            >
+              <strong>Affiliate disclosure:</strong> This post contains affiliate
+              links. If you book through them, I earn a small commission at no
+              extra cost to you. I only link to hotels and experiences I have
+              personally used — never anything I haven't. Full details on my
+              <a href="/affiliate-disclosure" class="text-primary hover:underline">
+                affiliate disclosure page</a>.
+            </aside>
+          )
+        }
         <div class="content mb-16 text-left">
           <Content />
         </div>

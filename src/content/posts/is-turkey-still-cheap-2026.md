@@ -7,6 +7,7 @@ authors: ["Lulu the pug"]
 categories: ["guides"]
 tags: ["turkey", "travel-costs", "budget-travel", "istanbul", "cappadocia"]
 draft: false
+affiliate: true
 ---
 
 "Turkey is so cheap!" is something you'll hear constantly from travel bloggers who visited in 2019. But a lot has changed since then. The Turkish lira has crashed, inflation has been brutal, and tourist areas have adjusted their prices accordingly.

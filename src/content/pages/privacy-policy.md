@@ -16,6 +16,10 @@ We may use basic analytics to understand how visitors use this site (page views,
 
 This blog may contain links to external websites. We're not responsible for the privacy practices of other sites. When you leave our site, we encourage you to read the privacy policy of any website you visit.
 
+#### Affiliate Links and Cookies
+
+Some links on this site are affiliate links, meaning we may earn a commission if you book through them, at no extra cost to you. Affiliate partners (booking platforms, tour marketplaces, insurance providers) may set their own tracking cookies on the pages you visit after clicking through, governed by their own privacy policies. We only link to hotels and experiences we have personally used. Full details are on our [affiliate disclosure page](/affiliate-disclosure).
+
 #### Contact Information
 
 If you contact us through the contact form or email, your information will only be used to respond to your message. We don't add you to mailing lists or share your information with third parties.

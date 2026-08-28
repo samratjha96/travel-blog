@@ -15,6 +15,7 @@ tags:
     "budget-travel",
   ]
 draft: false
+affiliate: true
 faqs:
   - question: "How much does a hot air balloon ride cost in Cappadocia?"
     answer: "Expect to pay 200 to 250 euros per person with a reputable company. Book directly with the balloon company rather than through a middleman tour agency."

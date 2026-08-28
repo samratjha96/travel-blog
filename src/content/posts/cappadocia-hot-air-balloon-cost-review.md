@@ -7,6 +7,7 @@ authors: ["Lulu the pug"]
 categories: ["guides"]
 tags: ["turkey", "cappadocia", "hot-air-balloon", "travel-costs", "bucket-list"]
 draft: false
+affiliate: true
 faqs:
   - question: "What if my Cappadocia hot air balloon flight gets cancelled?"
     answer: "Weather cancellations are extremely common. Reputable companies will reschedule you for another morning at no charge or give a full refund. Always confirm their cancellation policy before booking and build extra days into your itinerary."
